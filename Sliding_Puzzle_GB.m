@@ -73,6 +73,8 @@ title_screen{2} = 'MADE BY LYES DEMRI';
 title_screen{3} = ['FOR GB COMPO ' double('2025')+7];
 title_screen{4} = 'EVERYTHING MADE FROM';
 title_screen{5} = 'SCRATCH USING MATLAB';
+title_screen{6} = 'NOT LICENCED BY';
+title_screen{7} = 'NINTENDO';
 
 for i=1:length(title_screen)
   write_text_data(title_screen{i}, title_screen_placeholders(i));

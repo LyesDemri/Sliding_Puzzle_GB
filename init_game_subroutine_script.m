@@ -41,10 +41,21 @@ LD_HL('0000');title_screen_placeholders(5) = PC-1;
 LD_DE('98E0');
 CALL(write_text);
 
-LD_HL('0000');press_start_placeholder = PC-1;
+LD_HL('0000');title_screen_placeholders(6) = PC-1;
 LD_DE('9920');
 CALL(write_text);
+
+LD_HL('0000');title_screen_placeholders(7) = PC-1;
+LD_DE('9940');
+CALL(write_text);
+
+LD_HL('0000');press_start_placeholder = PC-1;
+LD_DE('9980');
+CALL(write_text);
+
 CALL(turn_on_screen);
+
+
 
 POP_HL();
 POP_DE();
