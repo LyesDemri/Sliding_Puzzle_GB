@@ -2,12 +2,10 @@ clear;clc;close all;
 
 path1 = '/MATLAB Drive/Matlab_GB_ROM_Creator';
 path2 = 'E:/GBDev/GBROMMaker';
-if isfolder(path1)
+%if isfolder(path1)
     addpath(path1);
-    path = path1;
-elseif isfolder(path2)
+%elseif isfolder(path2)
     addpath(path2);
-    path = path2;
 else
     error('You need Matlab_GB_ROM_Creator somewhere to compile this');
 end
@@ -58,8 +56,8 @@ CALL(draw_grid);
 RETI();
 PC = tmp;
 
-alphabet_address = load_alphabet([path '/Alphabet']);
-numbers_address = load_numbers([path '/Alphabet']);
+alphabet_address = load_alphabet('/MATLAB Drive/Matlab_GB_ROM_Creator/Alphabet');
+numbers_address = load_numbers('/MATLAB Drive/Matlab_GB_ROM_Creator/Alphabet');
 
 disp(['text data starts at: ', dec2hex(PC,4)])
 
